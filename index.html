@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
+        <title>Modal JS</title>
+    </head>
+    <body>
+        <main>
+            <div class="hero-container-left">
+                <h1>This is the main heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                </p>
+
+                <button class="btn" id="clickMe">
+                    📌 Click me
+                    <div>This button opens modal <a href="https://www.google.com">Google</a></div>
+                </button>
+            </div>
+            <div class="hero-container-right">
+                <img
+                    src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&q=80&w=1335&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="hero-image"
+                />
+            </div>
+        </main>
+
+        <div id="modal" class="modal-hide">
+            <div class="backdrop"></div>
+            <div class="modal-card">
+                <h2>A modal was opened</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                </p>
+                <button class="btn">Do other things</button>
+                <button class="btn" id="close">❌</button>
+            </div>
+        </div>
+    </body>
+</html>

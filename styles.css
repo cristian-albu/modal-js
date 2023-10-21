@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero-container-left {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero-container-right {
+    display: flex;
+    width: 45%;
+}
+
+.hero-image {
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 8px 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 200ms, transform 200ms;
+}
+
+.btn:hover {
+    background-color: rgb(78, 78, 78);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.178);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.205);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+
+.modal-show {
+    display: flex;
+}
+
+.modal-hide {
+    display: none;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#clickMe {
+    position: relative;
+}
+
+#clickMe div {
+    display: none;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: -3rem;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+#clickMe:hover div {
+    display: flex;
+}
